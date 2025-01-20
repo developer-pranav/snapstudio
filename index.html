@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" crossorigin="anonymous" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>SnapStudio | Mockups Generator</title>
+</head>
+<body>
+    <main>
+        <div class="preview-set">
+            <div class="preview">
+                <div class="window">
+                    <div class="nav-window">
+                        <span class="circle" id="red"></span>
+                        <span class="circle" id="yellow"></span>
+                        <span class="circle" id="green"></span>
+                    </div>
+                    <div class="url"></div>
+                    <div class="blank"></div>
+                </div>
+                <div class="webpage">
+                    <img id="webpageElement" src="assets/default.png">
+                </div>
+            </div>
+        </div>
+        <div class="settings">
+            <div class="sub-settings" id="url-settings">
+                <h3>URL Details</h3>
+                <input type="text" id="urlInput" autocomplete="off" placeholder="developer-pranav.in">
+            </div>
+            <div class="sub-settings" id="theme">
+                <h3>Color Theme</h3>
+                <div id="theme-select">
+                    <div>
+                        <label>
+                            <input type="radio" name="radio" id="light-theme" value="light">
+                            <span>Light</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio" id="dark-theme" checked value="dark">
+                            <span>Dark</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio" id="custom-theme">
+                            <span>Custom</span>
+                        </label>
+                    </div>
+                </div>
+                <div id="custom-clr">
+                    <div class="custom-clr-detail" id="custom-bg">
+                        <p>Window Color: </p>
+                        <input type="color" id="clr-bg" class="custom-clr" value="#333333" disabled>
+                    </div>
+                    <div class="custom-clr-detail" id="custom-urlBox">
+                        <p>Background Url: </p>
+                        <input type="color" id="clr-urlBox" class="custom-clr" value="#444444" disabled>
+                    </div>
+                    <div class="custom-clr-detail" id="custom-url">
+                        <p>Url Color: </p>
+                        <input type="color" id="clr-url" class="custom-clr" value="#eeeeee" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-settings" id="uploadDownload">
+                <h3>Upload/Download</h3>
+                <div id="ud-btn">
+                    <button id="upload" onclick="triggerFileInput()">Upload</button>
+                    <button id="download">Download</button>
+                    <input type="file" id="inputWeb" accept="image/jpeg, image/jpg, image/png">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+<script src="assets/dom-to-image.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
