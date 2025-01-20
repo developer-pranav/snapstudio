@@ -36,7 +36,7 @@ Experience the landing page live [here](https://developer-pranav.github.io/snaps
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 Feel free to modify the links, license, or other specifics as per your project.
